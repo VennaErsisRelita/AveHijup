@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Lupapassword extends AppCompatActivity {
     private EditText userEmail;
-    private Button kirimEmail;
+    private TextView kirimEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,17 +19,6 @@ public class Lupapassword extends AppCompatActivity {
         setContentView(R.layout.lupapassword);
         userEmail = findViewById(R.id.useremail);
         kirimEmail = findViewById(R.id.kirimemail);
-
-        kirimEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email =
-            }
-
-
-
-        );
-
     }
 
 
