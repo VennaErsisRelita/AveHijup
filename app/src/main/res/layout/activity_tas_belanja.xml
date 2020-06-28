@@ -1,9 +1,315 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TasBelanja">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Keranjang"
+        android:textColor="@color/merah"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/produk"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logoave"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keranjang" />
+
+    <TextView
+        android:id="@+id/namaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:text="Bella Square Mocca"
+        android:textColor="@color/merah"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/produk"
+        app:layout_constraintTop_toBottomOf="@+id/keranjang" />
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Rp. 25.000,00"
+        android:textColor="@color/merah"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/produk"
+        app:layout_constraintTop_toBottomOf="@+id/namaProduk" />
+
+    <TextView
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="jumlah = 1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/produk"
+        app:layout_constraintTop_toBottomOf="@+id/harga" />
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Hapus"
+        android:textColor="@color/colorwhite"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/produk"
+        app:layout_constraintTop_toBottomOf="@+id/jumlah" />
+
+    <View
+        android:id="@+id/garis4"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/merah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/produk" />
+
+
+    <ImageView
+        android:id="@+id/produk2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logoave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garis4" />
+
+    <TextView
+        android:id="@+id/namaProduk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        android:text="Bella Square Green Pastel"
+        android:textColor="@color/merah"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/produk2"
+        app:layout_constraintTop_toBottomOf="@+id/garis4" />
+
+    <TextView
+        android:id="@+id/harga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Rp. 25.000,00"
+        android:textColor="@color/merah"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/produk2"
+        app:layout_constraintTop_toBottomOf="@+id/namaProduk2" />
+
+    <TextView
+        android:id="@+id/jumlah2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="jumlah = 1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/produk2"
+        app:layout_constraintTop_toBottomOf="@+id/harga2" />
+
+    <Button
+        android:id="@+id/btnHapus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Hapus"
+        android:textColor="@color/colorwhite"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/produk2"
+        app:layout_constraintTop_toBottomOf="@+id/jumlah2" />
+
+    <View
+        android:id="@+id/garis5"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/merah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/produk2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/colorwhite"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garis5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewtotPembelian"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/totPembelian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pembelian"
+                        android:textColor="@color/merah"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/jumlahBeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Jumlah Beli : "
+                android:textColor="@color/merah"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewtotPembelian" />
+
+            <TextView
+                android:id="@+id/isiJumlahBeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/jumlahBeli"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewtotPembelian" />
+
+            <View
+                android:id="@+id/garis6"
+                android:layout_width="155dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/merah"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jumlahBeli" />
+
+            <TextView
+                android:id="@+id/totHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Total Harga : "
+                android:textColor="@color/merah"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/garis6" />
+
+            <TextView
+                android:id="@+id/isiTotHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:text="50000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/totHarga"
+                app:layout_constraintTop_toBottomOf="@+id/garis6" />
+
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Checkout"
+                android:textColor="@color/colorwhite"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isiTotHarga" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnLanjutBelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Lanjut Belanja"
+            android:textColor="@color/colorwhite"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
