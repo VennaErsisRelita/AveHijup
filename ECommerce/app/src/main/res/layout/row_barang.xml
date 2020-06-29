@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_barang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#E9E7E7"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hijab"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:layout_below="@+id/gambar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="RANDOM"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:layout_below="@+id/nama_barang"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="16dp"
+            android:text="RANDOM"
+            android:textStyle="italic"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/rv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nama_barang"
+            android:layout_below="@id/gambar"
+            android:text="8"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_star_yellow_24dp"/>
+        <TextView
+            android:id="@+id/rv_ratin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nama_barang"
+            android:layout_below="@id/gambar"
+            android:visibility="gone"
+            android:text="8"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_star_yellow_24dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
